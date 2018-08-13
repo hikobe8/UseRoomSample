@@ -1,4 +1,4 @@
-package com.ray.useroomsample.entity;
+package com.ray.useroomsample.db;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
@@ -6,6 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
 import com.ray.useroomsample.dao.WordDao;
+import com.ray.useroomsample.entity.Word;
 
 /**
  * Author : hikobe8@github.com

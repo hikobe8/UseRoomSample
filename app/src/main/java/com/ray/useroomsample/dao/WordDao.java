@@ -1,6 +1,7 @@
 package com.ray.useroomsample.dao;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
@@ -13,6 +14,7 @@ import java.util.List;
  *  Create at 2018-08-13 19:02
  *  description : 
  */
+@Dao
 public interface WordDao {
 
     @Insert
@@ -21,7 +23,7 @@ public interface WordDao {
     @Query("DELETE FROM word_table")
     void deleteAll();
 
-    @Query("SELECT * FROM WORD_TABLE ORDER BY word ASC")
+    @Query("SELECT * FROM word_table ORDER BY word ASC")
     LiveData<List<Word>> getAllWords();
 
 }

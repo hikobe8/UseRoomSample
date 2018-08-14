@@ -38,7 +38,7 @@ public class WordRepository {
 
         private WordDao mAsyncWordDao;
 
-        public InsertAsyncTack(WordDao asyncWordDao) {
+        InsertAsyncTack(WordDao asyncWordDao) {
             mAsyncWordDao = asyncWordDao;
         }
 
